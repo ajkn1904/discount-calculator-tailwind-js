@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-green-700 text-center mt-10">Let's Count the<span class="font-semibold text-fuchsia-700"> Discooooount!</span></h1>
+    </header>
+    <main class="p-4 mb-8">
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+
+                <div class="bg-orange-400 p-4 text-center text-white text-2xl font-semibold rounded-xl">
+                    <h4>Amount</h4>
+                    <p class="text-4xl font-semibold"><span id="amount-update">0</span></p>
+                </div>
+
+
+                <div class="bg-violet-400 p-4 text-center text-white text-2xl font-semibold rounded-xl">
+                    <h4>Disount</h4>
+                    <p class="text-4xl font-semibold"><span  id="discount-update">0</span> %</p>
+                </div>
+
+
+                <div class="bg-green-400 p-4 text-center text-white text-2xl font-semibold rounded-xl">
+                    <h4>After Discount</h4>
+                    <p class="text-4xl font-semibold"><span  id="total-update">0</span></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="grid grid-cols-2 gap-2 w-9/12 mx-auto mt-16">
+
+                <div class="bg-green-300 p-2 text-center rounded-xl">
+                    <h2 class="text-2xl font-semibold mb-1">Your Amount</h2>
+
+                    <input id="get-amount" class="border-2 px-2 rounded w-9/12 mt-2 mb-2" placeholder="Enter the Total Amount" type="text"> <br>
+
+                   <!--  <button id="btn-get-amount" class="bg-orange-700 hover:bg-fuchsia-700 p-3 my-2 rounded-lg text-white font-semibold text-1xl">AMOUNT</button> -->
+                
+                </div>
+
+
+                <div class="bg-sky-300 p-2 text-center rounded-xl">
+                    <h2 class="text-2xl font-semibold mb-1">Your Discount</h2>
+
+                    <input id="get-discount" class="border-2 px-2 rounded w-9/12 mt-2 mb-2" placeholder="Enter the Discount Percentage" type="text"> <br>
+
+                   <!-- <button id="btn-get-discount" class="bg-orange-700 hover:bg-fuchsia-700 p-3 my-2 rounded-lg text-white font-semibold text-1xl">PERCENT</button> -->
+                
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-rose-200 p-2 text-center rounded-xl w-9/12 mx-auto">
+            <h2 class="text-2xl font-semibold mt-2">Confirmation</h2>
+
+            <input id="confirm-text" class="border-2 px-2 text-center rounded w-9/12 h-11 mt-2 mb-2" placeholder="To Calculate Please Type Exactly 'confirm' and Click the Button" type="text">
+
+            <button id="confirm-btn" class="bg-orange-600 hover:bg-fuchsia-700 p-3 mb-6 rounded-lg font-semibold text-white text-1xl" disabled>CONFIRM</button>
+        
+        </section>
+
+    </main>
+
+
+    <script src="JS/discountCalculationScript.js"></script>
+</body>
+<footer class="bg-gray-700 text-center p-7 text-white">
+    <small>Ⓒ 2022 | Anika Jumana Khanam</small>
+</footer>
+</html>
